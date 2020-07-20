@@ -1,9 +1,10 @@
 'use strict';
 
 const logItems = function (array) {
-  for (const elementArray of array) {
-    const elementIndex = array.indexOf(elementArray);
-    console.log(`${elementIndex + 1} - ${elementArray}`);
+  let index = 1;
+  for (const item of array) {
+    console.log(`${index} - ${item}`);
+    index += 1;
   }
 };
 logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
